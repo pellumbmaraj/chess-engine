@@ -3,7 +3,7 @@ const path = require('path');
 const { spawn } = require('child_process');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4000;
 app.use(express.json());  // Parse JSON bodies
 
 // Serve static files from the "public" directory
